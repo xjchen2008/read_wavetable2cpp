@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/",
+                "/home/james/projects/leakage_cancellation/read_wavetable2cpp",
+                "/usr/include/qt4/Qt",
+                "/usr/include/c++/7/tr1",
+                "/usr/include/qt4/",
+                "/usr/include/python2.7_d",
+                "/usr/include/boost"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

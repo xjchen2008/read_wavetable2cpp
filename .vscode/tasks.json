@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                //"readtable_v2.cpp -lpython2.7 -lm -L/usr/lib/python2.7/config/ -I/usr/include/python2.7/"
+                //"-Wall", "readtable_v2.cpp", "-lstdc++", "-o", "readtable_v2"
+                //"-Wall", "gradient_decent.cpp", "-lstdc++", "-o", "gradient_decent", "-std=c++11", 
+                "-Wall", "multithread.cpp", "-lstdc++","-pthread", "-o", "multithread", "-std=c++11", 
+                "-I/usr/include/python2.7", "-lpython2.7", "-lboost_python", "-lboost_numpy"
+                 
+            ],
+            "group": "build",
+            "presentation": {
+                // Reveal the output only if unrecognized errors occur.
+                "reveal": "silent"
+            },
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

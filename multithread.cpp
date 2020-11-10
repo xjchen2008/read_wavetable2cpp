@@ -23,7 +23,7 @@ void consume (int n) {
 
 int main ()
 {
-  std::cout<<"hello world!!\n";//<<std::endl;
+  std::cout<<"hello world!!!\n";//<<std::endl;
   std::thread consumer_thread (consume,10);
 
   // produce 10 items when needed:
